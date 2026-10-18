@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spiegazione ranking</title>
+    <link href="Sito reti di calcolatori.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <h1 style="color: green; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Assegnazione punteggio</h1>
+
+    <div class="layout">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIWBsru6AN_93BhNy0Wnp53jsGrwUqyYohPsoqi0SYjw&s=10" class="foto3">
+    
+        <div style="text-align: center; font-size: large;">
+
+            <p>Il <strong>Ranking Mondiale FIVB</strong> (Fédération Internationale de Volleyball) è il sistema matematico ufficiale utilizzato per classificare le migliori coppie di beach volley al mondo. Non si tratta di un semplice accumulo infinito di vittorie, ma di un sistema dinamico e meritocratico, progettato per premiare la <strong>costanza</strong> e i <strong>risultati recenti</strong> al massimo livello agonistico.</p>
+
+            <p>La regola d'oro del ranking è la <strong>Finestra dei 365 giorni</strong>. La classifica prende in considerazione esclusivamente i tornei giocati nell'ultimo anno solare. Per evitare che le squadre siano incentivate a giocare un numero estenuante di tornei a discapito della qualità, il calcolo finale somma solamente i <strong>migliori 8 risultati</strong> ottenuti da una coppia in questo arco di tempo. Una volta superato l'anno di distanza, i punti del torneo più vecchio "scadono" e la classifica si aggiorna automaticamente.</p>
+
+            <p>I punti non vengono assegnati in modo casuale, ma dipendono dall'importanza della competizione. Il circuito mondiale, noto come <strong>Beach Pro Tour</strong>, è strutturato su tre livelli principali:</p>
+
+            <ul style="text-align: left;">
+                <li><strong>Tornei Elite16:</strong> Il livello più alto e spettacolare in assoluto. Vi partecipano esclusivamente le migliori 16 squadre del pianeta. La vittoria in queste tappe garantisce il <strong>massimo dei punti regolari</strong> (solitamente 1200 punti).</li>
+                <li><strong>Tornei Challenge:</strong> Il livello intermedio. Sono tornei altamente competitivi in cui le squadre cercano di accumulare i punti necessari (circa 800 per la vittoria) per scalare la classifica e accedere alla fascia Elite.</li>
+                <li><strong>Tornei Futures:</strong> Il livello di ingresso, pensato per i giovani talenti e le nuove formazioni (circa 400 punti per il primo posto).</li>
+            </ul>
+
+            <p>A questo circuito si aggiungono i <strong>Grandi Eventi</strong>: i Campionati Mondiali (ogni due anni) e i Giochi Olimpici (ogni quattro anni). Questi tornei eccezionali offrono un montepremi di punti nettamente superiore a qualsiasi altra competizione, potendo stravolgere l'intera classifica in un solo weekend.</p>
+
+            <p>Mantenere un punteggio elevato è di importanza vitale per gli atleti. Il ranking determina infatti il <strong>Seeding (le Teste di Serie)</strong> all'interno dei gironi dei tornei, permettendo ai più forti di avere percorsi inizialmente più agevoli. Soprattutto, la classifica mondiale è il criterio primario per la <strong>Qualificazione Olimpica</strong>: solo chi resta costantemente in vetta riesce a staccare il biglietto per rappresentare la propria nazione ai Giochi.</p>
+
+        </div>
+
+        <div class="destra">
+
+            <img src="ranking1.jpg" class="foto4">
+                
+            <button id="tema" class="bottoni">Tema Chiaro</button>
+
+            <button onclick="window.location.href='Sito reti di calcolatori.html'" class="bottoni">Torna indietro</button>
+
+        </div>
+
+    </div>    
+
+    <script>
+
+        const tema = document.getElementById("tema");
+        const pagina = document.body;
+
+        tema.addEventListener("click", function() {
+
+            pagina.classList.toggle("tema-chiaro");
+
+            if (pagina.classList.contains("tema-chiaro")) {
+                tema.innerText = "Tema Scuro";
+            } else {
+                tema.innerText = "Tema Chiaro";
+            }
+            
+        });
+        
+    </script>
+</body>
+</html>

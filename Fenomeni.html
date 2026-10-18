@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I geni del BeachVolley</title>
+    <link href="Sito reti di calcolatori.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <h1>David Åhman e Jonatan Hellvig</h1>
+
+    <div class="layout">
+        
+        <div class="sinistra">
+            
+            <h2>I giovani svedesi che hanno hackerato il Beach Volley</h2>
+            
+            <p>Fino a pochi anni fa, il beach volley si basava su una regola d'oro in tre tocchi: <strong>ricezione, alzata da terra e attacco</strong>. Poi sono arrivati David Åhman e Jonatan Hellvig, guidati dai loro allenatori Rasmus Jonsson e Anders Kristiansson, e hanno letteralmente stravolto il manuale di questo sport.</p>
+
+            <h3>La Rivoluzione: Lo "Swedish Jump Set"</h3>
+            <p>La vera arma letale della coppia svedese è il modo in cui gestiscono il <strong>secondo tocco</strong>. Invece di rimanere a terra per alzare la palla al compagno, il giocatore svedese salta in aria vicino alla rete.</p>
+            
+            <p>Questo crea un dilemma irrisolvibile per la difesa avversaria:</p>
+            <ul>
+                <li><strong>Se il muro avversario salta</strong> per murare chi ha la palla, lo svedese fa un'alzata rapidissima (spesso in bagher o a una mano) per il compagno, che si ritrova ad attaccare con la rete completamente libera.</li>
+                <li><strong>Se il muro avversario non salta</strong> (aspettando l'alzata per l'altro giocatore), lo svedese che è già in aria schiaccia direttamente la palla nel campo avversario al secondo tocco.</li>
+            </ul>
+
+            <img src="parigi2024.jpg" class="foto1">
+
+            
+        </div>
+
+        <div class="destra">
+            
+            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Beach_volleyball_at_the_2018_Summer_Youth_Olympics_%E2%80%93_Boys%27_Final_282.jpg/1920px-Beach_volleyball_at_the_2018_Summer_Youth_Olympics_%E2%80%93_Boys%27_Final_282.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20200525033359" class="foto1">
+            
+            <h3 style="text-align: left;">Un dominio assoluto</h3>
+            <p>Grazie a questo stile di gioco ultra-rapido, imprevedibile e fisicamente dispendioso, Åhman e Hellvig hanno dominato il circuito mondiale. Hanno vinto campionati Europei, Mondiali e hanno coronato il loro percorso con la <strong>Medaglia d'Oro alle Olimpiadi di Parigi 2024</strong>, confermandosi stabilmente al primo posto del ranking mondiale.</p>
+
+            <button id="tema" class="bottoni">Tema Chiaro</button>
+
+            <button onclick="window.location.href='Sito reti di calcolatori.html'" class="bottoni">Torna indietro</button>
+        
+        </div>
+    </div>
+
+    <script>
+
+        const tema = document.getElementById("tema");
+        const pagina = document.body;
+
+        tema.addEventListener("click", function() {
+
+            pagina.classList.toggle("tema-chiaro");
+
+            if (pagina.classList.contains("tema-chiaro")) {
+                tema.innerText = "Tema Scuro";
+            } else {
+                tema.innerText = "Tema Chiaro";
+            }
+            
+        });
+
+    </script>
+
+</body>
+</html>
